@@ -1,20 +1,19 @@
-
-function loadPage(){
-    paintContact(data);
+function loadPage() {
+  paintContact(data);
 }
 
-function paintContact (contacts) {
+function paintContact(contacts) {
 
-    contacts.forEach(function(persons) {
+  contacts.forEach(function(persons) {
     // crear elementos con DOM
     var $div = $("<div />", {
       "id": "addContact"
     });
     var $div1 = $("<div />");
     var $name = $("<h5 />");
-    var $imagen=$("<img />");
-    var $div2=$("<div />");
-    var $button=$("<button />");
+    var $imagen = $("<img />");
+    var $div2 = $("<div />");
+    var $button = $("<button />");
 
 
     //  atributos y eventos a los elementos creados en el DOM
@@ -23,7 +22,7 @@ function paintContact (contacts) {
     // $button.attr('data-addres',place.address)
     // $button.attr('data-hour',place.hour)
     // $button.attr('data-cost',place.cost)
-    $imagen.attr('src',persons.image);
+    $imagen.attr('src', persons.image);
     $button.addClass("btn btn-primary");
 
 
@@ -46,7 +45,7 @@ function paintContact (contacts) {
     // agregamos lo que creamos con el Dom a un elemento existente del html
 
     $("#addContact").prepend($div);
- });
+  });
 };
 
 $(document).ready(loadPage);

@@ -15,34 +15,34 @@ function inicializarFirebase() {
 var provider = new firebase.auth.GoogleAuthProvider();
 
 /* ++++++++++++ Ingresa el Usuario por medio de Cuenta GMAIL ++++++++++ */
-$('#login').click(function(){
-	firebase.auth()
-	.signInWithPopup(provider)
-	.then(function(result) {
-		console.log(result.user);
-		saveDate(result.user);
-		$('#login').hide();
-		$('#photo').append("<img width='100px' src='"+result.user.photoURL+"''/>");
-    $('#name').append(result.user.displayName);
-    $('#email').append(result.user.email);
-    window.location.href = "views/pagMain.html"
-	})
+$('#login').click(function() {
+  firebase.auth()
+    .signInWithPopup(provider)
+    .then(function(result) {
+      console.log(result.user);
+      saveDate(result.user);
+      $('#login').hide();
+      $('#photo').append("<img width='100px' src='" + result.user.photoURL + "''/>");
+      $('#name').append(result.user.displayName);
+      $('#email').append(result.user.email);
+      window.location.href = "views/pagMain.html"
+    })
 });
 
-// Funcion guarda automaticamente al usuario en la BD en firebase
+/* ++++++++ Funcion guarda automaticamente al usuario en la BD en firebase (crea rama)+++++ */
 function saveDate(user) {
   var usuario = {
-    uid:user.uid,
-    nombre:user.displayName,
-    email:user.email,
-    foto:user.photoURL
+    uid: user.uid,
+    nombre: user.displayName,
+    email: user.email,
+    foto: user.photoURL
   }
   firebase.database().ref("pruebas/" + user.uid)
-  .set(usuario)   //modifica la llave
+    .set(usuario) //modifica la llave
 
 }
 
-/* ++++++++++++ Seccion donde el Usuario puede escribir un mensaje ++++++++++ */
+/* ++++++++++++ Carga pagina ++++++++++ */
 window.load = inicializar;
 
 function inicializar() {
