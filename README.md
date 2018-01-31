@@ -34,7 +34,9 @@ Para el proceso del desarrollo de la idea se utilizó la técnica de Desing Thin
 
 4. Prototipamos (Elaboramos los bocetos de la idea
 
-![PLY](https://))
+![PLY](./assets/images/boceto1.jpeg)
+![PLY](./assets/images/boceto2.jpeg)
+![PLY](./assets/images/boceto3.jpeg)
 
 5. Probar (Evaluamos con el usuario si la solución presentada cumplia su objetivo).  
 
