@@ -50,3 +50,17 @@ Este reto se utilizaron las siguientes herramientas, materiales y fuentes:
 - Trello para administra el proyecto y la definición de objetivos.
 - Investigaciones de INEGI para conocer a la población objetivo.
 - Articulos diversos para conocer más sobre nuestro target.
+
+
+
+## Herramientas Utilizadas:
+- HTML
+- CSS3
+- Jquery
+- Javascript
+- Bootstrap
+- Firebase
+
+
+###### Elaborado por y con:
+Laboratoria.
