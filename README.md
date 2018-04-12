@@ -15,7 +15,7 @@
 
 El reto consiste en desarrollar una solución digital, una red social, donde puedan compartir e interactuar los músicos:
 
-![PLY](https://github.com/IvonReD/social-net-product/blob/master/assets/images/pag1.jpg)
+![PLY](https://raw.githubusercontent.com/IvonReD/social-net-product/master/assets/images/pag1.jpg)
 ![PLY](./assets/images/pag2.jpg)
 ![PLY](./assets/images/pag3.jpg)
 ![PLY](./assets/images/pag4.jpg)
